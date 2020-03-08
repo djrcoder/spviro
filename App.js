@@ -38,7 +38,7 @@ var TAMA_MENU_TYPE = 'TAMA';
 // be presented with a choice of AR or VR. By default, we offer the user a choice.
 var defaultNavigatorType = UNSET;
 
-export default class ViroSample extends Component {
+export default class AwesomeProject extends Component {
   constructor() {
     super();
 
@@ -175,4 +175,4 @@ var localStyles = StyleSheet.create({
   },
 });
 
-module.exports = ViroSample;
+module.exports = AwesomeProject;
