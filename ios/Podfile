@@ -3,6 +3,11 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 target 'AwesomeProject' do
   # Pods for AwesomeProject
+
+  use_frameworks!
+  pod 'ViroReact', :path => '../node_modules/react-viro/ios/'
+  pod 'ViroKit', :path => '../node_modules/react-viro/ios/dist/ViroRenderer/'
+  
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -34,9 +39,7 @@ target 'AwesomeProject' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  use_frameworks!
-  pod 'ViroReact', :path => '../node_modules/react-viro/ios/'
-  pod 'ViroKit', :path => '../node_modules/react-viro/ios/dist/ViroRenderer/'
+  
 
   target 'AwesomeProjectTests' do
     inherit! :search_paths
